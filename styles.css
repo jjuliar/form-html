@@ -1,72 +1,73 @@
 body {
   background-color: rgb(185, 177, 184);
 }
+
 .card {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.479);
   background-color: white;
   border-radius: 5px;
-
 }
+
 .container{
   padding: 10px 20px;
 }
+
 .center {
     margin: auto;
     width: 30%;
     padding: 10px;   
-  }
+}
 
-  span {
-    color: red;
-    font-size: small;
-  }
+span {
+  color: red;
+  font-size: small;
+}
 
-  .button {
-    background-color: green; 
-    border: none;
-    color: white;
-    padding: 10px 50px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  .button1 {
-    background-color: white; 
-    color: black; 
-    border: 2px solid green;
-  }
+.button {
+  background-color: green; 
+  border: none;
+  color: white;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
 
-  .button1:hover {
-    background-color: green;
-    color: white;
-  }
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid green;
+}
 
-  input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-    font-family: 'Noto Sans JP', sans-serif;
-  }
+.button1:hover {
+  background-color: green;
+  color: white;
+}
 
-  input[type=text]:focus {
-    border: 3px solid #555;
-  }
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  font-family: 'Noto Sans JP', sans-serif;
+}
 
-  body{
-    font-family: 'Noto Sans JP', sans-serif;
-  }
+input[type=text]:focus {
+  border: 3px solid #555;
+}
 
-  .green-border {
-    border: 3px solid green !important;  
-  }
-  
- 
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.green-border {
+  border: 3px solid green !important;  
+}

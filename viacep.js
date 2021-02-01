@@ -5,34 +5,35 @@ $(document).ready(function() {
         $("#logr").val("");
         $("#bairro").val("");
         $("#cidade").val("");
-        $("#estado").val("");
+        $("#estado").val(""); 
         
     }
 
+    //Quando o input não for preenchido com dados pelo viacep (muda a cor da borda).
     function validacao(){
-        if($('#logr').val()!==''){  //assuming the form doesn't have some fields populated by default.
-                            $('#logr').addClass('green-border');
-                        } else {
-                            $('#logr').removeClass('green-border');
-                        }
+        if($('#logr').val()!==''){  
+            $('#logr').addClass('green-border');
+        } else {
+            $('#logr').removeClass('green-border');
+        }
 
-                        if($('#bairro').val()!==''){  //assuming the form doesn't have some fields populated by default.
-                            $('#bairro').addClass('green-border');
-                        } else {
-                            $('#bairro').removeClass('green-border');
-                        }
-                        
-                        if($('#cidade').val()!==''){  //assuming the form doesn't have some fields populated by default.
-                            $('#cidade').addClass('green-border');
-                        } else {
-                            $('#cidade').removeClass('green-border');
-                        }
+        if($('#bairro').val()!==''){  
+            $('#bairro').addClass('green-border');
+        } else {
+            $('#bairro').removeClass('green-border');
+        }
+        
+        if($('#cidade').val()!==''){  
+            $('#cidade').addClass('green-border');
+        } else {
+            $('#cidade').removeClass('green-border');
+        }
 
-                        if($('#estado').val()!==''){  //assuming the form doesn't have some fields populated by default.
-                        $('#estado').addClass('green-border');
-                        } else {
-                            $('#estado').removeClass('green-border');
-                        }
+        if($('#estado').val()!==''){
+            $('#estado').addClass('green-border');
+        } else {
+            $('#estado').removeClass('green-border');
+        }
     }
     
     //Quando o campo cep perde o foco.
@@ -60,9 +61,7 @@ $(document).ready(function() {
                 $.getJSON("https://viacep.com.br/ws/"+ cep +"/json/?callback=?", function(dados) {
 
                     if (!("erro" in dados)) {
-                        //Atualiza os campos com os valores da consulta.
-                       // $('#logr, #bairro, #cidade, #estado').addClass('green-border');
-                        
+                        //Atualiza os campos com os valores da consulta.                       
                         $("#logr").val(dados.logradouro);
                         $("#bairro").val(dados.bairro);
                         $("#cidade").val(dados.localidade);

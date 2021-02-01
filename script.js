@@ -7,7 +7,7 @@ $(document).ready(function(){
             } else {
                 $(this).removeClass('green-border');
             }
-        });
+        }); 
     });
 
     //Máscara de telefone para números com 9 dígitos, e fixos.
@@ -42,5 +42,5 @@ $(document).ready(function(){
 
     //Máscara de número residencial.
     $('#numero').mask('00000'); 
-
+    
 });

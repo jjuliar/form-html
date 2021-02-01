@@ -2,10 +2,9 @@ body {
   background-color: rgb(185, 177, 184);
 }
 .card {
-  /* Add shadows to create the "card" effect */
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.479);
   background-color: white;
-  border-radius: 5px; /* 5px rounded corners */
+  border-radius: 5px;
 
 }
 .container{
@@ -23,7 +22,7 @@ body {
   }
 
   .button {
-    background-color: green; /* Green */
+    background-color: green; 
     border: none;
     color: white;
     padding: 10px 50px;

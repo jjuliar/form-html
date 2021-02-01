@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Formulário</title> 
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel = "icon" href="flor.png" type = "image/x-icon"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="viacep.js"></script>
+  </head>
+
+  <body>
+    <div class="center card">
+      <div class="container">
+        <form method="POST">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required>
+        
+          <label for="tel">Telefone:</label> 
+          <input type="text" id="tel" name="tel" required>
+          <span id= "telinvalido"></span>
+          <br>
+          
+          <label for="cep">CEP:</label>
+          <input type="text" id="cep" name="cep" required> 
+          <span id = cepinvalido></span>
+          <br>
+
+          <label for="logr">Logradouro:</label>
+          <input type="text" id="logr" name="logr" required>
+
+          <label for="numero">Número:</label>
+          <input type="text" id="numero" name="numero" required>
+
+          <label for="compl">Complemento:</label>         
+          <input type="text" id="compl" name="compl">
+
+          <label for="bairro">Bairro:</label>
+          <input type="text" id="bairro" name="bairro" required>
+
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" required>
+
+          <label for="estado">Estado:</label>
+          <input type="text" id="estado" name="estado" required>
+
+          <div class="center">
+            <button class="button button1" type="submit" id="botao">Enviar</button>
+          </div>
+        </form>
+    </div> 
+  </div>
+</body>
+</html>
